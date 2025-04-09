@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Online Courses</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      color: #1f2d3d;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #555;
+    }
+
+    .btn {
+      margin-top: 20px;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .courses-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 40px 20px;
+      justify-content: center;
+      background-color: #f9f9f9;
+    }
+
+    .course-list {
+      flex: 1 1 400px;
+      max-width: 600px;
+    }
+
+    .course-list h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .course {
+      margin-bottom: 20px;
+    }
+
+    .course p {
+      color: #555;
+    }
+
+    .course .price {
+      font-weight: bold;
+      float: right;
+    }
+
+    .choose-course {
+      flex: 1 1 300px;
+      max-width: 400px;
+    }
+
+    .choose-course h2 {
+      margin-bottom: 15px;
+    }
+
+    .choose-course p {
+      color: #555;
+    }
+
+    .table-section {
+      padding: 40px 20px;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    th {
+      background-color: #1f2d3d;
+      color: #fff;
+    }
+
+    .enroll-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .testimonials {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 2rem;
+      color: #1f2d3d;
+    }
+
+    .quotes {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #444;
+    }
+
+    @media(min-width: 768px) {
+      .quotes {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Unlock Your Potential with Top Online Courses</h1>
+    <p>Learn from industry experts and gain skills that matter. Anytime, anywhere.</p>
+    <button class="btn">Explore Courses</button>
+  </header>
+
+  <section class="courses-section">
+    <div class="course-list">
+      <div class="course">
+        <h3>Udemy <span class="price">$99</span></h3>
+        <p>A comprehensive course that teaches full-stack web development using HTML, CSS, JavaScript, Node.js, and more. Suitable for beginners looking to build real-world web applications.</p>
+      </div>
+      <div class="course">
+        <h3>Python for Everybody <span class="price">$45</span></h3>
+        <p>An in-depth program from the University of Michigan that covers the basics of Python programming. Ideal for learners new to coding or looking to use Python in data analysis and automation.</p>
+      </div>
+      <div class="course">
+        <h3>Become a Data Analyst <span class="price">$32</span></h3>
+        <p>A learning path combining multiple short courses aimed at helping learners build the foundational skills needed to become a data analyst. Includes Excel, SQL, Python, and data visualization.</p>
+      </div>
+      <div class="course">
+        <h3>CS50x: Introduction to Computer Science <span class="price">$50</span></h3>
+        <p>A learning path combining multiple short courses aimed at helping learners build the foundational skills needed to become a data analyst. Includes Excel, SQL, Python, and data visualization.</p>
+      </div>
+      <div class="course">
+        <h3>Become a Data Analyst <span class="price">$29.99</span></h3>
+        <p>A learning path combining multiple short courses aimed at helping learners build the foundational skills needed to become a data analyst. Includes Excel, SQL, Python, and data visualization.</p>
+      </div>
+    </div>
+    <div class="choose-course">
+      <h2>Choose Course</h2>
+      <p>Unlock your potential with expertly crafted courses designed to sharpen your skills, fuel your creativity, and help you stay ahead in a competitive world.</p>
+    </div>
+  </section>
+
+  <section class="table-section">
+    <h2 style="text-align:center; margin-bottom: 20px;">Top Online Courses</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Course Name</th>
+          <th>Platform</th>
+          <th>Price</th>
+          <th>Duration</th>
+          <th>Key Features</th>
+          <th>Rating</th>
+          <th>Enroll Now</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Complete Web Developer Bootcamp</td>
+          <td>Udemy</td>
+          <td>$99</td>
+          <td>6 weeks</td>
+          <td>Interactive quizzes, Lifetime access</td>
+          <td>★★★★★</td>
+          <td><button class="enroll-btn">Enroll</button></td>
+        </tr>
+        <tr>
+          <td>Python for Everybody</td>
+          <td>Coursera</td>
+          <td>$45/month</td>
+          <td>4 months</td>
+          <td>Certification, Peer reviews</td>
+          <td>★★★★★</td>
+          <td><button class="enroll-btn">Enroll</button></td>
+        </tr>
+        <tr>
+          <td>Become a Data Analyst</td>
+          <td>LinkedIn Learning</td>
+          <td>$29.99/month</td>
+          <td>1 month</td>
+          <td>Expert instructors, Video lessons</td>
+          <td>★★★★☆</td>
+          <td><button class="enroll-btn">Enroll</button></td>
+        </tr>
+        <tr>
+          <td>CS50x: Introduction to CS</td>
+          <td>edX</td>
+          <td>Free (cert. for $50)</td>
+          <td>Self-paced</td>
+          <td>University-backed, Projects</td>
+          <td>★★★★★</td>
+          <td><button class="enroll-btn">Enroll</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Customer Says</h2>
+    <div class="quotes">
+      <p class="quote">"I've taken many online courses, but this one truly stood out. The instructor was engaging, the lessons were well-structured, and the support was amazing!"</p>
+      <p class="quote">"Thanks to this course, I landed my first freelance client! The step-by-step guidance and real-life strategies made all the difference."</p>
+      <p class="quote">"It's rare to find a course that's both beginner-friendly and packed with value. I went from knowing nothing to building my own website!"</p>
+    </div>
+  </section>
+</body>
+</html>
